@@ -4,3 +4,8 @@ if n%3==0:
 else:
     print("no es divisible por 3")
 
+if n%5==0:
+    print("divisible por 5")
+else:
+    print("no es divisible por 5")
+
