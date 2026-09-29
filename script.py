@@ -1,12 +1,13 @@
+def check_factors(n):
+    if n%15==0:
+        return (3, 5)
+    elif n%3==0:
+        return 3
+    elif n%5==0:
+        return 5
+    else:
+        return None
+
 n = int(input("Entero: "))
-if n%3==0:
-    print("divisible por 3")
-else:
-    print("no es divisible por 3")
-
-if n%5==0:
-    print("divisible por 5")
-else:
-    print("no es divisible por 5")
-
-print("Goodbye")
+factors = check_factors(n)
+print(f"factors: {factors}") if factors else  print('No factors')
